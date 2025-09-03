@@ -58,7 +58,7 @@ Passionate CS undergrad (CGPA: 9.85) building production-grade AI & web systems 
 ---
 
 ## 📫 Let’s Connect  
-- ✉️ dhavala@example.com  
-- 🔗 [linkedin.com/in/dhavala](https://linkedin.com/in/dhavala)  
-- 🌐 [your-portfolio.site](https://your-portfolio.site)  
+- ✉️ kartikeyadhavalaofficial@gmail.com
+- 🔗 [linkedin.com/in/dhavala](https://www.linkedin.com/in/dhavalakartikeyasomayaji/)  
+
 
