@@ -2,7 +2,7 @@
   <h1 style="background: linear-gradient(90deg, #00C9FF, #92FE9D); -webkit-background-clip: text; color: transparent;">
     👋 Hi there, I’m Dhavala Kartikeya Somayaji
   </h1>
-  <p><strong>Aspiring Data Scientist & AI-Powered Full-Stack Engineer</strong></p>
+  <p><strong>Aspiring Data Scientist</strong></p>
   <p>
     <a href="#"><img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" alt="Python"></a>
     <a href="#"><img src="https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white" alt="FastAPI"></a>
@@ -35,7 +35,7 @@ Passionate CS undergrad building production-grade AI & web systems end-to-end. I
 ### QueryAgent  
 - **Problem:** Slow, error-prone manual query resolution over large CSV datasets.  
 - **Implementation:** Developed an agentic chatbot backend using LangGraph orchestration, Pinecone for vector retrieval, and FastAPI.  
-- **Production:** Implemented caching, monitoring, and auto-retry mechanisms, increasing throughput by 3× and maintaining 90%+ answer accuracy.
+- **Production:** Implemented caching, monitoring, and auto-retry mechanisms, increasing throughput by 3× and maintaining 90%+ answer accuracy all at my internship at Caprae Capital Partners for their product SaaSquatch Leads.
 
 ---
 
