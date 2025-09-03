@@ -14,7 +14,7 @@
 ---
 
 ## 🔭 About Me  
-Passionate CS undergrad (CGPA: 9.85) building production-grade AI & web systems end-to-end. I ship real solutions:
+Passionate CS undergrad building production-grade AI & web systems end-to-end. I ship real solutions:
 
 
 ---
