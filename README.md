@@ -56,11 +56,16 @@ Passionate CS undergrad building production-grade AI & web systems end-to-end. I
 </p>
 
 ___
----
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=Knightkolla&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=Knightkolla&theme=tokyonight&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=Knightkolla&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+## 📊 GitHub Stats:
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Knightkolla&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true" height="180em"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Knightkolla&theme=tokyonight&hide_border=false&layout=compact" height="180em"/>
+</p>
+
+<p align="center">
+  <img src="https://nirzak-streak-stats.vercel.app/?user=Knightkolla&theme=tokyonight&hide_border=false" height="180em"/>
+</p>
+
 ___
 ## 🤔 Questions for You  
 - Which project should be featured most prominently?  
