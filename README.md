@@ -49,7 +49,7 @@ dhavala = {
 
 **The problem:** You have a 45-hour surveillance recording. A crime happened somewhere. Finding it frame-by-frame is impossible at scale.
 
-**What FALCON does:** An RL agent navigates the video like a detective — seeing only **20% of frames** — and pinpoints the exact crime onset in **2–4 minutes**.
+**What FALCON does:** An RL agent navigates the video like a detective seeing only **20% of frames**  and pinpoints the exact crime onset in **2–4 minutes**.
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -81,7 +81,7 @@ dhavala = {
 ### Self-Initiated Research Agent
 `LangGraph · LangChain · Gemini · Pinecone · Tavily`
 
-Autonomous multi-agent system that **formulates its own research questions**, retrieves literature, detects contradictions across multi-hop chains, and writes structured reports — without human intervention. Self-evaluates and iteratively refines outputs.
+Autonomous multi-agent system that **formulates its own research questions**, retrieves literature, detects contradictions across multi-hop chains, and writes structured reports  without human intervention. Self-evaluates and iteratively refines outputs.
 
 ---
 
@@ -163,7 +163,7 @@ End-to-end B2B company discovery platform with real-time WebSocket updates, Gemi
 
 I'm not here to fine-tune pretrained models on Kaggle datasets.
 
-I want to work on problems where the architecture itself is the research — where getting to the right answer means going back to the math and questioning assumptions the field takes for granted. Generalization, sample efficiency, and the gap between what LLMs appear to do and what they actually do — that's the territory I want to work in.
+I want to work on problems where the architecture itself is the research where getting to the right answer means going back to the math and questioning assumptions the field takes for granted. Generalization, sample efficiency, and the gap between what LLMs appear to do and what they actually do that's the territory I want to work in.
 
 If you're building something in that space, let's talk.
 
