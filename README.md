@@ -20,8 +20,6 @@
 
 </div>
 
----
-
 ```python
 dhavala = {
     "currently_building": "FALCON — RL-guided crime localization in surveillance video",
@@ -33,14 +31,14 @@ dhavala = {
 
 > *"Most people use deep learning. I want to understand it well enough to break it."*
 
----
-
 ## Research Projects
 
 ### FALCON — Frame-Aware Crime Localization Agent
 `PPO · ViT · Hierarchical Attention · UCF-Crime Dataset`
 
-An RL agent that finds the exact crime frame in a 45-hour surveillance video by inspecting only **20% of frames** — in under 4 minutes.
+**Problem:** Surveillance footage can run 45+ hours. Manually scanning it to find where a crime occurred is not feasible at scale — and existing methods process every frame, which is computationally brutal.
+
+**Approach:** Treat it as a search problem. A PPO-based RL agent navigates a low-resolution segment map of the video with a hard budget of 20% of total frames. For each segment it visits, HAFED (a two-scale Vision Transformer) zooms into the full 30fps high-resolution clip and runs frame-level and segment-level attention to score anomaly likelihood. FGlobal then propagates that knowledge to neighboring unvisited segments, so the agent gets smarter without spending its budget. The policy learns to hunt — moving toward high-anomaly regions like a hot-and-cold detector.
 
 ```
 RAW VIDEO (45hrs)
@@ -56,39 +54,45 @@ FGlobal — propagates knowledge to neighboring segments
 EXACT CRIME FRAME + forensic audit trail
 ```
 
-- 4x speedup over brute-force · 95% accuracy on UCF-Crime subset · Shipped as Flask web app
-
----
+**Result:** 4x speedup over brute-force scanning · 95% accuracy on UCF-Crime subset · Shipped as a Flask web app with a full forensic audit trail of the agent's navigation path
 
 ### Confidence-Based Early Exit Inference
-`PyTorch · Transformers`
+`PyTorch · Transformers · YAML`
 
-Lightweight classifier heads at intermediate Transformer layers — model exits early when confidence clears a threshold. Automated sweep across 7 thresholds benchmarks accuracy vs FLOPs against full-depth baseline.
+**Problem:** Large Transformer models spend the same compute on every input regardless of difficulty — a simple sample gets the same treatment as a hard one, which is wasteful at scale.
 
----
+**Approach:** Attached lightweight classifier heads at intermediate layers of the network. During inference, if a layer's prediction confidence crosses a configurable threshold, the model exits early and skips the remaining layers entirely. Trained all exit heads jointly with weighted cross-entropy so each layer learns to be independently useful. Built an automated sweep pipeline that evaluates accuracy vs FLOPs trade-offs across 7 thresholds and reports computational savings against the full-depth baseline.
+
+**Result:** Measurable FLOPs reduction with configurable accuracy trade-off · Fully reproducible via seeded RNGs and YAML-driven config
 
 ### Self-Initiated Research Agent
-`LangGraph · LangChain · Gemini · Pinecone`
+`LangGraph · LangChain · Gemini · Pinecone · Tavily`
 
-Autonomous multi-agent system that formulates its own research questions, retrieves literature, detects contradictions across multi-hop chains, and iteratively refines structured reports without human intervention.
+**Problem:** Research is slow because it requires a human in the loop at every step — forming questions, finding papers, synthesizing findings, spotting contradictions.
 
----
+**Approach:** Built a fully autonomous multi-agent system using LangGraph where modular nodes handle query planning, web retrieval, evidence aggregation, and contradiction detection across multi-hop reasoning chains. Grounded outputs in domain-specific knowledge via RAG over a Pinecone vector store to reduce hallucination. The agent self-evaluates its own output quality and iteratively rewrites reports until they meet a coherence threshold — no human needed between runs.
+
+**Result:** End-to-end research pipeline that runs without intervention and produces progressively more coherent structured reports across successive reasoning steps
 
 ## Production Work
 
 ### ML Engineer Intern — Caprae Capital Partners *(Jul 2025 – Jan 2026)*
 
-- Agentic query system over **50k+ company records** deployed on AWS EC2 — 40% reduction in manual research effort
-- ML-based company scoring pipeline using real-time web data — 20% faster task completion
-- **1st Place / 25 Teams** internal hackathon — microservice shipped directly to production
+Private equity firm needed analysts to search and evaluate thousands of companies faster without sacrificing quality.
+
+- Built an agentic query system over **50k+ company records** on AWS EC2 — analysts can now query conversationally instead of manually, cutting research effort by 40%
+- Designed an ML-based company scoring pipeline using real-time web data to standardize senior-level evaluation — 20% faster task completion
+- **1st Place / 25 Teams** internal hackathon — keyword-driven niche company discovery microservice shipped directly to production and actively used
 - Stack: FastAPI · LangGraph · Flask · Pinecone · Docker · AWS
 
 ### SaaS Lead Generation Platform
 `FastAPI · React · MongoDB · Docker · Playwright`
 
-End-to-end B2B company discovery platform with real-time WebSocket updates, Gemini-powered scoring, and containerized deployment.
+**Problem:** B2B lead research is manual, inconsistent, and slow — sales teams waste hours finding and scoring companies by hand.
 
----
+**Approach:** Built an end-to-end automated company discovery platform that continuously scrapes and collects B2B data from the web, scores each company using Gemini for standardized evaluation, and pushes updates to users in real time via WebSockets so they act on new leads immediately without refreshing. Containerized the entire backend with Docker for consistent deployments across environments.
+
+**Result:** Automated pipeline replacing hours of manual research · Real-time lead visibility · Production-ready containerized deployment
 
 ## Stack
 
@@ -109,18 +113,14 @@ End-to-end B2B company discovery platform with real-time WebSocket updates, Gemi
 ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
 
----
-
 ## Beyond the Code
 
-**Google Developer Groups — Co-Lead** *(May 2025 – Present)*
+**Google Developer Groups — Technical Lead** *(May 2025 – Present)*
 Technical curriculum for 200+ students · Mentored 3 teams to production deployment
 
-**Persona Labs — Co-founder and CEO ** · Selected from 150+ ideas for RNSIT Incubation Center
+**Persona Labs — Co-Founder & CEO** · Co-founded and leading a startup selected from 150+ ideas for official incubation at the RNSIT Incubation Center
 
 **Endorsed by** Zackery Beckham, Co-Founder, Caprae Capital Partners
-
----
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Knightkolla&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" height="165"/>
@@ -130,8 +130,6 @@ Technical curriculum for 200+ students · Mentored 3 teams to production deploym
 <div align="center">
   <img src="https://nirzak-streak-stats.vercel.app/?user=Knightkolla&theme=tokyonight&hide_border=true" height="165"/>
 </div>
-
----
 
 <div align="center">
 
