@@ -113,10 +113,10 @@ End-to-end B2B company discovery platform with real-time WebSocket updates, Gemi
 
 ## Beyond the Code
 
-**Google Developer Groups — Technical Lead** *(May 2025 – Present)*
+**Google Developer Groups — Co-Lead** *(May 2025 – Present)*
 Technical curriculum for 200+ students · Mentored 3 teams to production deployment
 
-**Persona Labs — Founder** · Selected from 150+ ideas for RNSIT Incubation Center
+**Persona Labs — Co-founder and CEO ** · Selected from 150+ ideas for RNSIT Incubation Center
 
 **Endorsed by** Zackery Beckham, Co-Founder, Caprae Capital Partners
 
